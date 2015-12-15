@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+#flickr {
+	border: 1px solid #ddd;
+	margin-top: 22em;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 2em;
+	max-width: 960px;
+	text-align: center;
+}
+#flickr h3 {
+	margin: 0;
+	padding: 0.7em;
+	background: #303030;
+	color: #fff;
+	font-weight: normal;
+	font-size: 1em;
+	text-transform: uppercase;	
+}
+
+#flickr .images a {
+	display: inline-block;
+	margin: 0.5em;
+}
+
+#flickr .images a img {
+	width: 100%;
+}
+
+#showphoto div script {
+}

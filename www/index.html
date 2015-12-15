@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+       
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        
+<!--MATERIAL SHEET-->        
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
+		<link rel="stylesheet" href="/vendor/waves/waves.min.css" />
+		<link rel="stylesheet" href="/vendor/wow/animate.css" />
+		<link rel="stylesheet" href="/css/nativedroid2.css" />      
+<!-- END OF MATERIAL SHEET-->        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+   <link href="css/custom.css" rel="stylesheet" type="text/css" /> 
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script>
+
+    $(document).bind('mobileinit',function(){
+
+        $.mobile.pushStateEnabled = false;
+
+    });</script> 
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+
+  <link rel="stylesheet" href="themes/blue.min.css" />
+  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="css/flickr.css" />
+        <title>Backdrops</title>
+    </head>
+    
+    
+    <body>
+        <div data-role="page" id="home" data-theme="a">
+	<div data-role="header">
+		<h1>Backdrops</h1>
+	</div>
+    
+    <img src="BG.png" width="100%" alt=""/>
+    
+<div data-role="content" data-theme="a">	
+  <ul data-inset="true" data-role="listview" data-theme="a">
+		<li><a href="#about">About</a></li>
+        <li><a href="#photos">Photos</a></li>
+		</ul>  		
+	</div>
+	<div data-role="footer">
+		<h4>&copy; Hotline Bling, 2015</h4>
+	</div>
+</div>
+
+
+<!--ABOUT PAGE-->
+<div data-role="page" id="about" data-theme="a">
+  <div data-role="header"><a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back  ui-corner-all"  data-role="button" role="button">Back</a>
+
+
+    <h1>Backdrops</h1>
+  </div>
+  <div data-role="content" data-theme="a">
+    <div data-role="collapsible-set">
+    <div data-role="collapsible" data-collapsed="true">
+        <h3>About us</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ante leo. Sed varius est orci, non eleifend risus blandit ac. Sed non tempus nibh. Duis erat justo, egestas eget imperdiet in, viverra vitae dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque vestibulum tellus a justo dignissim, sed auctor sem blandit. Curabitur sit amet lacus feugiat, porta odio eu, pretium diam. Nunc luctus sed ipsum a luctus. Mauris non suscipit nunc. </p>
+        <center><a href="https://twitter.com"/>Follow Me On Twitter</a></center>
+      </div>
+      <div data-role="collapsible">
+        <h3>Why Us </h3>
+        <p>Donec velit neque, posuere eget nibh sit amet, ultrices lacinia eros. Nam pharetra luctus odio a facilisis. Nulla feugiat leo quis turpis dignissim, vitae mattis tortor volutpat. In elementum, erat quis placerat finibus, enim tortor efficitur diam, ac gravida est purus a lorem. Nulla interdum tellus id tempus tristique. Morbi ac metus vestibulum, mollis augue sit amet, scelerisque orci. In nulla metus, varius eget commodo non, elementum a ligula. Aliquam quam orci, consequat sit amet lorem in, ultricies elementum turpis. In hendrerit nisl et elit bibendum, id mollis lacus bibendum.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div data-role="footer">
+    
+    <div data-role="navbar" data-theme="b" data-iconpos="bottom">
+	<ul>
+		<li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-top">Home</a></li>
+		<li><a href="#photos" class="ui-btn ui-icon-grid ui-btn-icon-top">Photos</a></li>
+	</ul>
+    <h4>&copy; Hotline Bling, 2015</h4>
+</div><!-- /navbar -->
+  </div>
+</div>
+
+
+<!--PHOTOS-->
+<div data-role="page" id="photos" data-theme="a">
+<div data-role="header">
+<a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back  ui-corner-all"  data-role="button" role="button">Back</a>
+
+
+    <h1>Photos</h1>
+  </div>
+    <div data-role="content">
+      <div class="ui-grid-c" id="photolist"></div>
+    </div><!-- content -->
+  </div><!-- photos page -->
+  
+  
+  <!--SHOW_PHOTO PAGE-->
+  <div id="showphoto" data-role="page" data-theme="a">
+  <div data-role="header">
+<a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back  ui-corner-all"  data-role="button" role="button">Back</a>
+    <h1>Photos</h1>
+  </div>
+    <div data-role="content">
+      <div id="myphoto"></div>
+      <script src="js/flickr.js"></script>
+<script src="http://api.flickr.com/services/feeds/photos_public.gne?id=138554941@N04&format=json&tags="BG""></script>
+ 
+    </div><!-- content -->
+  </div><!-- show photo page -->
+ 
+ 
+ 
+ 
+ 
+ 
+<!-- THIS IS THE JS--> 
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js'></script>
+	 
+
+ <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+  <script src="js/script.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		<script src="/vendor/waves/waves.min.js"></script>
+		<script src="/vendor/wow/wow.min.js"></script>
+		<script src="/js/nativedroid2.js"></script>
+		<script src="/nd2settings.js"></script>
+  
+    </body>
+</html>
